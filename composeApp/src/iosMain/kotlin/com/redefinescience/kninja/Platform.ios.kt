@@ -1,5 +1,6 @@
 package com.redefinescience.kninja
 
+import org.koin.dsl.module
 import platform.UIKit.UIDevice
 
 class IOSPlatform: Platform {
@@ -7,3 +8,7 @@ class IOSPlatform: Platform {
 }
 
 actual fun getPlatform(): Platform = IOSPlatform()
+
+val iosKoinModule = module {
+
+}
